@@ -20,6 +20,9 @@
   "devDependencies": {
     "@as-integrations/express5": "^1.1.2",
     "@types/express": "^5.0.3",
+    "@types/node": "^24.8.1",
+    "prisma": "^6.17.1",
+    "ts-node": "^10.9.2",
     "tsc-watch": "^7.2.0",
     "typescript": "^5.9.3"
   }

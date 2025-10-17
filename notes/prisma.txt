@@ -1,0 +1,29 @@
+Prisma
+
+
+Jab tu backend likhta hai (Express, NestJS, GraphQL, etc.)
+aur database (PostgreSQL, MySQL, MongoDB, SQLite...) use karta hai,
+to normal SQL likhne ke bajay tu Prisma ke through JavaScript/TypeScript code se hi database se baat kar sakta hai.
+
+EXAMPLE
+
+----- without prisma
+
+const result = await db.query('SELECT * FROM users WHERE id = $1', [id]);
+
+
+----- with prisma 
+
+const user = await prisma.user.findUnique({
+  where: { id: 1 }
+});
+
+
+
+Supported Databases:
+
+✅ PostgreSQL
+✅ MySQL
+✅ SQLite
+✅ MongoDB
+✅ SQL Server
